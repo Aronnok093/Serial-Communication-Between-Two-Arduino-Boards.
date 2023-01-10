@@ -1,4 +1,4 @@
-Code
+//Receiver Arduino Board Code
 char mystring[20];               //Initialized variable to store receive
 void setup() {
  Serial.begin(9600);             // Begin the Serial at 9600 Baud
