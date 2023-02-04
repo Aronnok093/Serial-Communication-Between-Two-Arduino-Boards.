@@ -1,11 +1,18 @@
-//Receiver Arduino Board Code
-char mystring[20];               //Initialized variable to store receive
+// Receiver code:
+
 void setup() {
- Serial.begin(9600);             // Begin the Serial at 9600 Baud
+  delay(100);
+  DDRD = DDRD & B11111101;  
+  UCSR0B = UCSR0B | B00011000;  
+  UCSR0C = UCSR0C | B00000110;
+   UCSR0A |= (1 << U2X0);
+  UBRR0 = 207;  
 }
+
 void loop() {
- Serial.readBytes(mystring,15);  //Read the serial data
- Serial.println(mystring);       //Print data on Serial Monitor
- Serial.println(" RECEIVER");
- delay(1000);    
+ 
+  
+  while ((UCSR0A & B10000000) == 0);                 
+  char data = UDR0;   
+  Serial.print(data);
 }
