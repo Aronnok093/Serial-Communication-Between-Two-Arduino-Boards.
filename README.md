@@ -46,7 +46,7 @@ UBRR                    |  Baud Rate Register
 
 ###UCSR0A:
    
--------- |--------|--------|--------|---------|--------|---------|--------
+
 D7       |D6      |D5      |D4      |D3       |D2      |D1       |D0 
 ---------|--------|--------|--------|---------|--------|---------|--------
 RXC0     |TXC0    |UDRE0   |FE0     |DOR0     |UPE0    |U2X0     |MPCM0
@@ -86,11 +86,11 @@ This bit enables the multiprocessor communication.
 0 : Writing to UCSR0A.
 
 
--------------------------------------------------------------------------
-UCSR0B
--------------------------------------------------------------------------
+
+###UCSR0B
+
 D7         |D6      |D5       |D4      |D3       |D2      |D1    |D0      
----------------------------------------------------------------------------
+-----------|--------|---------|--------|---------|--------|------|---------
 RXCIE0     |TXCIE0  |UDREIE0  |RXEN0   |TXEN0    |UCSZ20 |RXB80  |TXB80
 --------------------------------------------------------------------------
 This bit is used to show the status of the received interrupt.
@@ -126,27 +126,20 @@ RXB8n is the ninth data bit of the received character when operating with serial
 TXB8n is the 9th data bit in the character to be transmitted when operating with serial frames with 9 data bits. Must be written before writing the low bits to UDR0.
 
 
--------------------------------------------------------------------------
-UCSR0C
--------------------------------------------------------------------------
+
+###UCSR0C
+
 D7       |D6      |D5      |D4      |D3       |D2      |D1       |D0      
----------------------------------------------------------------------------
-URSEL0   |UMSEL0  |UPM10  |UPM00   |USBS0     |UCSZ10  |UCSZ00   |UCPOL0
---------------------------------------------------------------------------
+---------|--------|--------|--------|---------|--------|---------|---------
+URSEL0   |UMSEL0  |UPM10   |UPM00   |USBS0     |UCSZ10  |UCSZ00   |UCPOL0
+----------------------------------------------------------------------------
+
 ---![Screenshot 2023-02-05 062042](https://user-images.githubusercontent.com/64925270/216795165-f429c221-87e5-4950-85ee-10c5cbfd5fca.png)
------------------------------------------------------------------------
+-
 
 
-:point_right:***The project will be developed using visual studio community 2017<br/>***
+:point_right:***Arduino uno<br/>***
 
-:point_right:***ASP.NET MVC <br/>***
+:point_right:***UART Module<br/>***
 
-:point_right:***MSSQL Server 2008 <br/>***
-
-:point_right:***ADO.NET CONNECTED ARCHITECTURE<br/>***
-
-![Screenshot (59)](https://user-images.githubusercontent.com/64925270/215279889-3b8ccb25-87da-4a71-b1bc-95f9aead9586.png)
-![Screenshot (60)](https://user-images.githubusercontent.com/64925270/215279949-18468db7-5268-4605-a1d8-acc000287747.png)
-![Screenshot (61)](https://user-images.githubusercontent.com/64925270/215279960-d1db0fa4-31cd-4f00-8605-55b0a7dd5c85.png)
-
-![Screenshot 2023-02-05 055647](https://user-images.githubusercontent.com/64925270/216794583-e5deb0eb-de7f-4721-9dc0-35f3ce912cd1.png)
+###Special thanks to Dr. Md. Raqibul Hasan:hearts:
