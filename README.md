@@ -53,10 +53,14 @@ RXC0     |TXC0    |UDRE0   |FE0     |DOR0     |UPE0    |U2X0     |MPCM0
 --------------------------------------------------------------------------
 
 This bit is used to show the status of the received buffer.
+
 ###Bit 7 - RXC0 : USART Receive complete
+
 1 : Unread data in the Receiver buffer
 0 : Receive buffer is empty.
+
 This bit us used to show the status of the transmitted buffer.
+
 ###Bit 6 - TXC0 : USART transmit complete
 1 : No data present in the buffer register to transmit
 0 : Transmit complete interrupt is executed.
