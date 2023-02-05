@@ -162,4 +162,4 @@ URSEL0   |UMSEL0  |UPM10   |UPM00   |USBS0     |UCSZ10  |UCSZ00   |UCPOL0
 
 :point_right:***UART Module<br/>***
 
-###Special thanks to Dr. Md. Raqibul Hasan:hearts:
+###Special thanks to Dr. Md. Raqibul Hasan:hearts: <a href ="https://www.aust.edu/cse/faculty_member/dr_md_raqibul_hasan">profile</a>
