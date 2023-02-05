@@ -54,38 +54,35 @@ RXC0     |TXC0    |UDRE0   |FE0     |DOR0     |UPE0    |U2X0     |MPCM0
 
 This bit is used to show the status of the received buffer.
 
-###Bit 7 - RXC0 : USART Receive complete
-
+### Bit 7 - RXC0 : USART Receive complete
 1 : Unread data in the Receiver buffer
 0 : Receive buffer is empty.
-
 This bit us used to show the status of the transmitted buffer.
-
-###Bit 6 - TXC0 : USART transmit complete
+### Bit 6 - TXC0 : USART transmit complete
 1 : No data present in the buffer register to transmit
 0 : Transmit complete interrupt is executed.
 This bit indicates whether Transmit data buffer ready to receive new data.
-###Bit 5 - UDRE0 : USART Data Register empty
+### Bit 5 - UDRE0 : USART Data Register empty
 1 : Transmitter buffer is empty
 0 : Transmitter is ready.
 This bit us used to show the Frame error.
-###Bit 4 - FE0 : Frame error
+### Bit 4 - FE0 : Frame error
 1 : Next character in the receiver buffer had error
 0 : Writing to UCSR0A.
 This bit us used to show the Receiver data over run occure.
-###Bit 3 - DOR0 : Data over run
+### Bit 3 - DOR0 : Data over run
 1 : Receiver buffer is full (Receiver data over run occure)
 0 : Writing to UCSR0A.
 This bit us used to show the parity error.
-###Bit 2 - UPE0 : Parity Error
+### Bit 2 - UPE0 : Parity Error
 1 : Next character in the receiver buffer had a parity error
 0 : Writing to UCSR0A.
 This bit has effect for the Asynchronous operation. For Synchronous operation write this bit to 0.
-###Bit 1 - U2X0: Double the USART transmission speed
+### Bit 1 - U2X0: Double the USART transmission speed
 1 :Reduces the divisor of the baud rate divider from 16 to 8 effectively doubling the transfer rate of Asynchronous communication
 0 : Synchronous operation.
 This bit enables the multiprocessor communication.
-###Bit 0 - MPCM0: Multiprocessor communication mode
+### Bit 0 - MPCM0: Multiprocessor communication mode
 1 :All the incoming frames received by the USART Receiver that do not contain address information will be ignored.
 0 : Writing to UCSR0A.
 
