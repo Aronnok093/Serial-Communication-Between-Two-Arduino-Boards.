@@ -25,15 +25,15 @@ Contact US: :mailbox_with_mail:
 
 *** UDR0, UCSR0A, UCSR0B, and UBRR0 are the AVR microcontroller's registers that are used for serial communication on the Arduino platform.
 
-UDR0 (USART Data Register 0) is a register that holds the data to be transmitted or the data received over serial communication. When sending data, you write the data to the UDR0 register. When receiving data, you read the data from the UDR0 register.
+### UDR0 (USART Data Register 0) is a register that holds the data to be transmitted or the data received over serial communication. When sending data, you write the data to the UDR0 register. When receiving data, you read the data from the UDR0 register.
 
-UCSR0A (USART Control and Status Register A) is a register that holds the control and status bits for the USART (Universal Synchronous Asynchronous Receiver Transmitter) module. Some of the important bits in this register include RXC0 (Receive Complete), UDRE0 (USART Data Register Empty), and TXC0 (Transmit Complete).
+### UCSR0A (USART Control and Status Register A) is a register that holds the control and status bits for the USART (Universal Synchronous Asynchronous Receiver Transmitter) module. Some of the important bits in this register include RXC0 (Receive Complete), UDRE0 (USART Data Register Empty), and TXC0 (Transmit Complete).
 
-UCSR0B (USART Control and Status Register B) is a register that holds the control and status bits for the USART module. Some of the important bits in this register include RXEN0 (Receiver Enable), TXEN0 (Transmitter Enable), and RXCIE0 (Receive Complete Interrupt Enable).
+### UCSR0B (USART Control and Status Register B) is a register that holds the control and status bits for the USART module. Some of the important bits in this register include RXEN0 (Receiver Enable), TXEN0 (Transmitter Enable), and RXCIE0 (Receive Complete Interrupt Enable).
 
-UBRR0 (USART Baud Rate Register) is a register that holds the baud rate value for serial communication. This value determines the speed of the serial communication, with higher values representing higher speeds. The baud rate can be calculated using the formula BAUD = F_CPU / (16 * (UBRR0 + 1)), where F_CPU is the clock frequency of the AVR microcontroller.***
+### UBRR0 (USART Baud Rate Register) is a register that holds the baud rate value for serial communication. This value determines the speed of the serial communication, with higher values representing higher speeds. The baud rate can be calculated using the formula BAUD = F_CPU / (16 * (UBRR0 + 1)), where F_CPU is the clock frequency of the AVR microcontroller.***
 
-###UART Register:
+### UART Register:
 Register                |  Description
 ----------------------- | -------------
 UDR                     |  USART Data Register
@@ -101,7 +101,7 @@ This bit enables the multiprocessor communication.
 
 
 
-###UCSR0B
+### UCSR0B
 
 D7         |D6      |D5       |D4      |D3       |D2      |D1    |D0      
 -----------|--------|---------|--------|---------|--------|------|---------
@@ -147,7 +147,7 @@ TXB8n is the 9th data bit in the character to be transmitted when operating with
 
 
 
-###UCSR0C
+### UCSR0C
 
 D7       |D6      |D5      |D4      |D3       |D2      |D1       |D0      
 ---------|--------|--------|--------|---------|--------|---------|---------
