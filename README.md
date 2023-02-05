@@ -109,26 +109,32 @@ RXCIE0     |TXCIE0  |UDREIE0  |RXEN0   |TXEN0    |UCSZ20 |RXB80  |TXB80
 This bit is used to show the status of the received interrupt.
 ### Bit 7 - RXCIE0: RX Complete Interrupt Enable
 1 : A USART0 Receive Complete interrupt will be generated
+
 0 : no interrupt.
 This bit us used to show the status of the transmitted interrupt .
 ### Bit 6 - TXC0 : USART transmit complete
 1 : A USART0 Transmit Complete interrupt will be generated
+
 0 : no interrupt.
 
 ### Bit 5 - UDRIE0: USART Data Register Empty Interrupt Enable
 1 : enables interrupt on the UDRE0 flag
+
 0 : no interrupt.
 
 ### Bit 4 - RXEN0: Receiver Enable
 1 : The Receiver will override normal port operation for the RxDn pin
+
 0 : Receiver will flush the receive buffer invalidating the FEn, DORn and UPEn flags.
 
 ### Bit 3 - TXEN0: Transmitter Enable
 1 : The Transmitter will override normal port operation for the TxDn pin
+
 0 : the Transmitter will not become effective until ongoing and pending transmissions are completed
 
 ### Bit 2 - UCSZ02: Character Size
 1 : number of data bits (character size) in a frame the Receiver and Transmitter use
+
 0 :nil
 
 ### Bit 1 - RXB8n: Receive Data Bit 8
