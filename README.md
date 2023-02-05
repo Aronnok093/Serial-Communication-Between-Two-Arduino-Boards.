@@ -56,34 +56,46 @@ This bit is used to show the status of the received buffer.
 
 ### Bit 7 - RXC0 : USART Receive complete
 1 : Unread data in the Receiver buffer
+
 0 : Receive buffer is empty.
+
 This bit us used to show the status of the transmitted buffer.
 ### Bit 6 - TXC0 : USART transmit complete
+
 1 : No data present in the buffer register to transmit
+
 0 : Transmit complete interrupt is executed.
+
 This bit indicates whether Transmit data buffer ready to receive new data.
+
 ### Bit 5 - UDRE0 : USART Data Register empty
 1 : Transmitter buffer is empty
+
 0 : Transmitter is ready.
 This bit us used to show the Frame error.
 ### Bit 4 - FE0 : Frame error
 1 : Next character in the receiver buffer had error
+
 0 : Writing to UCSR0A.
 This bit us used to show the Receiver data over run occure.
 ### Bit 3 - DOR0 : Data over run
 1 : Receiver buffer is full (Receiver data over run occure)
+
 0 : Writing to UCSR0A.
 This bit us used to show the parity error.
 ### Bit 2 - UPE0 : Parity Error
 1 : Next character in the receiver buffer had a parity error
+
 0 : Writing to UCSR0A.
 This bit has effect for the Asynchronous operation. For Synchronous operation write this bit to 0.
 ### Bit 1 - U2X0: Double the USART transmission speed
 1 :Reduces the divisor of the baud rate divider from 16 to 8 effectively doubling the transfer rate of Asynchronous communication
+
 0 : Synchronous operation.
 This bit enables the multiprocessor communication.
 ### Bit 0 - MPCM0: Multiprocessor communication mode
 1 :All the incoming frames received by the USART Receiver that do not contain address information will be ignored.
+
 0 : Writing to UCSR0A.
 
 
@@ -95,35 +107,35 @@ D7         |D6      |D5       |D4      |D3       |D2      |D1    |D0
 RXCIE0     |TXCIE0  |UDREIE0  |RXEN0   |TXEN0    |UCSZ20 |RXB80  |TXB80
 --------------------------------------------------------------------------
 This bit is used to show the status of the received interrupt.
-###Bit 7 - RXCIE0: RX Complete Interrupt Enable
+### Bit 7 - RXCIE0: RX Complete Interrupt Enable
 1 : A USART0 Receive Complete interrupt will be generated
 0 : no interrupt.
 This bit us used to show the status of the transmitted interrupt .
-###Bit 6 - TXC0 : USART transmit complete
+### Bit 6 - TXC0 : USART transmit complete
 1 : A USART0 Transmit Complete interrupt will be generated
 0 : no interrupt.
 
-###Bit 5 - UDRIE0: USART Data Register Empty Interrupt Enable
+### Bit 5 - UDRIE0: USART Data Register Empty Interrupt Enable
 1 : enables interrupt on the UDRE0 flag
 0 : no interrupt.
 
-###Bit 4 - RXEN0: Receiver Enable
+### Bit 4 - RXEN0: Receiver Enable
 1 : The Receiver will override normal port operation for the RxDn pin
 0 : Receiver will flush the receive buffer invalidating the FEn, DORn and UPEn flags.
 
-###Bit 3 - TXEN0: Transmitter Enable
+### Bit 3 - TXEN0: Transmitter Enable
 1 : The Transmitter will override normal port operation for the TxDn pin
 0 : the Transmitter will not become effective until ongoing and pending transmissions are completed
 
-###Bit 2 - UCSZ02: Character Size
+### Bit 2 - UCSZ02: Character Size
 1 : number of data bits (character size) in a frame the Receiver and Transmitter use
 0 :nil
 
-###Bit 1 - RXB8n: Receive Data Bit 8
+### Bit 1 - RXB8n: Receive Data Bit 8
 RXB8n is the ninth data bit of the received character when operating with serial frames with 9-data bits. Must be read before reading the low bits from UDR0.
 
 
-###Bit 0 - TXB8n: Transmit Data Bit 8
+### Bit 0 - TXB8n: Transmit Data Bit 8
 TXB8n is the 9th data bit in the character to be transmitted when operating with serial frames with 9 data bits. Must be written before writing the low bits to UDR0.
 
 
