@@ -71,3 +71,11 @@
   USART to a specific value. This value of 207 is specific to the clock frequency and desired baud rate,
   and might need to be changed for different microcontrollers or different baud rates.
  }
+
+****BAUD = F_CPU / (16 * (UBRR0 + 1))
+F_CPU=is the clock frequncy of the avr microcontroller.
+lets... consider F_CPU=16 Mhz
+UBRO = F_CPU/16*BAUD-1;
+     =16M/16*9600;            (to set baud rate 9600bps)
+     =104-1.
+     =103.
