@@ -45,7 +45,7 @@ UBRR                    |  Baud Rate Register
 
 ### UART Register Configuration:
 
-###UCSR0A:
+### UCSR0A:
    
 
 D7       |D6      |D5      |D4      |D3       |D2      |D1       |D0 
